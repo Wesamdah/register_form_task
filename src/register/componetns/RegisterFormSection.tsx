@@ -36,8 +36,6 @@ export default function RegisterForm() {
 
   const [validMatch, setValidMatch] = useState(false);
 
-  const [success, setSuccess] = useState(false);
-
   const inputs: Array<InputField> = [
     {
       label: "Name",
@@ -96,8 +94,6 @@ export default function RegisterForm() {
     }
 
     console.log("Form Data:", data);
-
-    setSuccess(true);
   };
 
   return (
